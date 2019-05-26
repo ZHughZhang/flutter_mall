@@ -4,6 +4,7 @@ import 'home_page.dart';
 import 'cart_page.dart';
 import 'category_page.dart';
 import 'member_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class IndexPage extends StatefulWidget {
   @override
@@ -49,7 +50,9 @@ class _IndexPageState extends State<IndexPage> {
 	
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+	  ScreenUtil.instance = ScreenUtil(width:750.0,height:1334.0)..init(context);//屏幕适配
+	
+	  return Scaffold(
 	    backgroundColor: Color.fromRGBO(244,245,245,1.0),
 	    bottomNavigationBar: BottomNavigationBar(
 			    type: BottomNavigationBarType.fixed,//导航栏的类型
@@ -63,6 +66,10 @@ class _IndexPageState extends State<IndexPage> {
 						    }
 				    )
 		    },
+	    ),
+	    body: IndexedStack(//保持页面不重复加载
+		    index: current_index,
+			    children:tabBodies,
 	    ),
     );
   }
