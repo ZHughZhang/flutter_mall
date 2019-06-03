@@ -34,6 +34,7 @@ class TopNav extends StatelessWidget {
 	    height: ScreenUtil().setHeight(320),
 	    padding: EdgeInsets.all(3.0),
 	    child: GridView.count(
+		    physics: NeverScrollableScrollPhysics(),//禁止滚动,解决滑动冲突
 		    controller:ScrollController(),
 		    crossAxisCount: 5,
 		    padding: EdgeInsets.all(5.0),
