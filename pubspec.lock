@@ -49,14 +49,14 @@ packages:
       name: dio
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.1.6"
+    version: "2.1.7"
   fluro:
     dependency: "direct main"
     description:
       name: fluro
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.4.0"
+    version: "1.5.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -82,7 +82,7 @@ packages:
       name: flutter_screenutil
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.5.2"
+    version: "0.5.3"
   flutter_swiper:
     dependency: "direct main"
     description:
@@ -211,7 +211,7 @@ packages:
       name: url_launcher
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "5.0.2"
+    version: "5.0.3"
   vector_math:
     dependency: transitive
     description:
@@ -221,4 +221,4 @@ packages:
     version: "2.0.8"
 sdks:
   dart: ">=2.2.0 <3.0.0"
-  flutter: ">=0.5.6 <2.0.0"
+  flutter: ">=1.5.0 <2.0.0"
